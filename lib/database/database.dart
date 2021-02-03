@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:stolik_dla_ciebie/models/order.dart';
 import 'package:stolik_dla_ciebie/models/user.dart';
 
 
@@ -20,9 +21,10 @@ class DatabasService{
   }
 
   //user list from snapshot
-  List<User> _userListFromSnapshot(QuerySnapshot snapshot){
+  List<Order> _userListFromSnapshot(QuerySnapshot snapshot)
+  {
     return snapshot.docs.map((doc){
-      return User(
+      return Order(
         name: doc.data()['name'] ?? '',
         description: doc.data()['description'] ?? '',
         table: doc.data()['table'] ?? 0,
@@ -33,9 +35,27 @@ class DatabasService{
     }).toList();
   }
 
+  // userData from snapshot
+  UserData _userDataFromSnapshot(DocumentSnapshot snapshot)
+  {
+    return UserData(
+      uid: uid,
+      name: snapshot.data()['name'],
+      description: snapshot.data()['description'],
+      table: snapshot.data()['table'],
+      date: snapshot.data()['date'],
+      number: snapshot.data()['number'],
+      date_close: snapshot.data()['date_close']
+    );
+  }
+
   //get users stream
-  Stream<List<User>> get users{
+  Stream<List<Order>> get users{
     return userCollection.snapshots()
     .map(_userListFromSnapshot);
+  }
+  // get user doc stream
+  Stream<UserData> get userData{
+    return userCollection.doc(uid).snapshots().map(_userDataFromSnapshot);
   }
 }

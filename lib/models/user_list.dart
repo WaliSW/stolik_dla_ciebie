@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:stolik_dla_ciebie/models/user.dart';
+import 'package:stolik_dla_ciebie/models/order.dart';
 import 'package:stolik_dla_ciebie/home/user_tile.dart';
 
 class UserList extends StatefulWidget {
@@ -11,7 +11,7 @@ class UserList extends StatefulWidget {
 class _UserListState extends State<UserList> {
   @override
   Widget build(BuildContext context) {
-    final users = Provider.of<List<User>>(context);
+    final users = Provider.of<List<Order>>(context);
 
     return ListView.builder(itemCount: users.length,
     itemBuilder: (context, index){

@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:stolik_dla_ciebie/models/user.dart';
+import 'package:stolik_dla_ciebie/models/order.dart';
 import 'package:stolik_dla_ciebie/restauracje/wloska.dart';
 class UserTile extends StatelessWidget {
-  final User user;
+  final Order user;
   UserTile({this.user});
   @override
   Widget build(BuildContext context) {

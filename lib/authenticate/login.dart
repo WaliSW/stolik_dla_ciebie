@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:stolik_dla_ciebie/home/home.dart';
 import 'package:stolik_dla_ciebie/authenticate/reset.dart';
 import 'package:stolik_dla_ciebie/authenticate/verify.dart';
+import 'package:provider/provider.dart';
 
 class LoginScreen extends StatefulWidget {
   @override

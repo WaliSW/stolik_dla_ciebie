@@ -5,7 +5,7 @@ import 'package:stolik_dla_ciebie/database/database.dart';
 import 'package:provider/provider.dart';
 import 'package:stolik_dla_ciebie/home/settings_form.dart';
 import 'package:stolik_dla_ciebie/models/user_list.dart';
-import 'package:stolik_dla_ciebie/models/user.dart';
+import 'package:stolik_dla_ciebie/models/order.dart';
 
 class Wloska extends StatelessWidget{
 
@@ -19,7 +19,7 @@ class Wloska extends StatelessWidget{
        );
       });
     }
-    return StreamProvider<List<User>>.value(
+    return StreamProvider<List<Order>>.value(
         value: DatabasService().users,
         child: Scaffold(
           appBar: AppBar(

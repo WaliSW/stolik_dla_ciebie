@@ -6,6 +6,8 @@ import 'package:stolik_dla_ciebie/home/home.dart';
 import 'package:stolik_dla_ciebie/restauracje/amerykanska.dart';
 import 'package:stolik_dla_ciebie/restauracje/gruzinska.dart';
 
+import 'models/user.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
@@ -24,20 +26,5 @@ void main() async {
     ),
   ));
 }
-
-// class MyApp extends StatelessWidget {
-//   // This widget is the root of your application.
-//   @override
-//   Widget build(BuildContext context) {
-//     const PrimaryColor = Colors.deepOrange;
-//     return MaterialApp(
-//       theme: ThemeData(
-//         primaryColor: PrimaryColor,
-//       ),
-//       home: MyHomePage(),
-//     );
-//   }
-// }
-//
 
 
