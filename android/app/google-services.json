@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "690616915533",
+    "project_id": "stolik-dla-ciebie",
+    "storage_bucket": "stolik-dla-ciebie.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:690616915533:android:3b87f28620f972e6f52e04",
+        "android_client_info": {
+          "package_name": "wojciechwalis.co.stolik_dla_ciebie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "690616915533-7co1c07ihpt929n3josi0gkeunrcs8se.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDm2da5S92XVOUJm5_xowhoYjwcvDw7kpg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "690616915533-7co1c07ihpt929n3josi0gkeunrcs8se.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
